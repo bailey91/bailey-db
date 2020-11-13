@@ -6,7 +6,7 @@ const { request, response } = require("express");
 const { Client, Pool } = require("pg");
 //const bodyParser = require('body-parser');
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.use(express.static("public"));
 app.use(express.json());
